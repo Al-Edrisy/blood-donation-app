@@ -31,7 +31,7 @@ const DonorList = ({ searchQuery }) => {
   const query = searchQuery ? searchQuery.toLowerCase() : '';
 
   const filteredDonors = donors.filter(donor =>
-    donor["Blood Type"].toLowerCase().includes(query)
+    donor["BloodType"].toLowerCase().includes(query)
   );
 
   return (
